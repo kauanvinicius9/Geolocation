@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import questions from "../../public/data/perguntas.json";
+import questions from "../src/perguntas.json";
 import "./fases.css";
 
 export default function Fases() {
