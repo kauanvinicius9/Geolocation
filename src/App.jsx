@@ -1,8 +1,8 @@
-import Mapa from "./map";
-import "./map.css";
+import Fases from "./components/fase";
+import "./components/map";
 
 export default function App() {
   return (
-    <Mapa/>
+    <Fases/>
   )
 }

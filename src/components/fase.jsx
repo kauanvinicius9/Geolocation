@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import questions from "../src/data/questions.json";
+import questions from "../data/questions.json";
 import "./fase.css";
 
 export default function Fases() {
@@ -39,7 +39,7 @@ export default function Fases() {
   return (
     <main className="questoes">
       <header className="q-header">
-        <h1 className="q-title">Label</h1>
+        <h1 className="q-title">Caça ao Tesouro</h1>
         <p className="q-subtitle">Toque no ícone para abrir a pergunta</p>
 
         <div className="progress">

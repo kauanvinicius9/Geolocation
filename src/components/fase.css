@@ -1,39 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --bg-primary: #0f0c1a;
-    --bg-secondary: #1a1633;
-    --bg-card: #221c44;
-
-    --text: #f5f5f5;
-    --details: #0e0e0e;
-
-    --color-primary-glow: #a78bfa;
-    --color-primary: #7c3aed;
-
-    --color-secondary: #22d3ee;
-    --color-secondary-dark: #0891b2;
-
-    --color-accent-gold: #facc15;
-    --color-accent-orange: #fb923c;
+.questoes {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
-* {
-    font-family: 'Inter', sans-serif;
+.q-header {
+    position: sticky;
+    border-width: 2px solid var(--color-primary);
+    top: 0;
+    z-index: 20;
+    background: var(--text);
+    padding: max(0.75rem, env(safw-area-inset-top)) 1rem 0.75rem 1rem;
+    height: 18dvh;
+}
+
+.q-title {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--text);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--bg-primary);
 }
 
-h1, h2, h3 {
-    font-weight: 400;
-    font-style: normal;
+.q-subtitle {
+    margin: .25rem 0 0 0;
+    font-size: 1.1rem;
+    color: var(--bg-primary);
 }
 
-:focus-visible {
-    outline: 3px solid var(--color-secondary-dark);
-    outline-offset: 2px;
+.progress {
+    position: relative;
+    margin-top: .75rem;
+    height: 13px;
+    border-radius: 999px;
+    background-color: var(--bg-progress);
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--color-secondary-dark);
+    border-radius: 999px;
+    transition: width .2s ease;
+}
+
+.progress-label {
+    color: var(--bg-primary);
 }

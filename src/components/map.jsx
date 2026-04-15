@@ -1,8 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useState } from "react";
+import "../components/map";
 import { useRef } from "react";
-import { marker } from "leaflet";
 
 export default function Mapa() {
 
